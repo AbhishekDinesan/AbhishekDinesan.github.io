@@ -166,7 +166,7 @@ h1{
 }
 
 .bar{
-    background: #353b48;
+    background: #C0C0C0;
     display: block;
     height: 20px;
     border: 1px solid rgba(0,0,0,0.3);
@@ -202,6 +202,49 @@ h1{
     }
     100%{
         width: 90%;
+    }
+}
+
+.javabar {
+    width: 80%;
+    animation: javabar 3s;
+}
+
+@keyframes javabar {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.csharp{
+    width: 70%;
+    animation: csharp 3s;
+
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.Cee{
+    width: 60%;
+    animation: Cee 3s;
+}
+
+@keyframes Cee {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 60%;
     }
 }
 
@@ -367,12 +410,12 @@ h1{
 
 .skills2{
     float: right;
-    margin-right: 150px;
+    margin-right: 165px;
 }
 
 .skills{
     float: left;
-    margin-left: 150px;
+    margin-left: 165px;
 }
 .skills section {
     width: 50px; 
