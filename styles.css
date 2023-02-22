@@ -105,18 +105,62 @@ header h1{
 .project{
     max-width: 250px;
     margin: 10px;
+    background-color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.projects-container{
+.project-description {
+    display: none;
+  }
+
+  .project.expanded {
+    width: 400px;
+    height: 250px;
+    background-color: #eee;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+
+  
+.project.expanded .project-title {
+    font-size: 24px;
+  }
+
+.project.expanded .project-description {
+    display: block;
+  }
+  
+  .project.expanded:hover {
+   transform: none;
+  }
+
+.project:hover {
+    transform: scale(1.25);
+    z-index: 100;
+  }
+
+  .project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .projects-container {
     text-align: center;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
     max-width: 810px;
     margin: 20px auto 0;
-    color: white;
+    color: var(--black);
     text-decoration: none;
+    gap: 20px;
 }
 
 a{
@@ -410,7 +454,7 @@ h1{
 
 .skills2{
     float: right;
-    margin-right: 165px;
+    margin-right: 150px;
 }
 
 .skills{
